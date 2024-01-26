@@ -6,6 +6,7 @@
     font-family: 'Cabin', sans-serif;
 }
 
+
 :root {
     --eerie-black: #1D1D1D;
     --moonstone: #56A3BB;
@@ -15,29 +16,35 @@
 
 /* Nav */
 nav {
-    z-index: 1;
+    z-index: 2;
 }
 
 nav #logo {
     height: 2rem;
 }
 
-/* Header */
-header #carouselAutoplaying {
+/* Carousel */
+#carouselAutoplaying {
     width: 100%;
-    position: absolute;
-    top: 0;
+    z-index: 1;
 }
 
-header img {
+img {
     max-height: 700px; 
     width: auto;
     object-fit: cover; 
     object-position: top;
 }
 
-/* About section */
+/* Main */
+main {
+    background-color: var(--eerie-black);
+}
 
+/* About section */
+.card .card-header {
+    background-color: var(--moonstone);
+}
 
 /* Featured Section */
 
