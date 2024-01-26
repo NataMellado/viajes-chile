@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -30,10 +28,9 @@ nav #logo {
 }
 
 img {
-    max-height: 700px; 
+    max-height: 700px;
     width: auto;
-    object-fit: cover; 
-    object-position: top;
+    object-fit: cover;
 }
 
 /* Main */
@@ -47,7 +44,10 @@ main {
 }
 
 /* Featured Section */
-
+.featured-section img {
+    width: 100%;
+    object-fit: cover;
+ }
 
 /* Form Section */
 
