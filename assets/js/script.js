@@ -27,38 +27,38 @@ $(document).ready(function() {
 
 
 // Smooth Scroll About-section //
-  $(document).ready(function() {
-    $('a.nav-link[href="#quienes-somos"]').on('click', function(event) {
-      event.preventDefault();
-      var targetPosition = $('#quienes-somos').offset().top;
+$(document).ready(function() {
+  $('a.nav-link[href="#quienes-somos"]').on('click', function(event) {
+    event.preventDefault();
+    var targetPosition = $('#quienes-somos').offset().top;
 
-      $('html, body').animate({
-        scrollTop: targetPosition
-      }, 800); 
-    });
+    $('html, body').animate({
+      scrollTop: targetPosition
+    }, 800); 
   });
+});
 
   // Smooth Scroll Featured-section //
-  $(document).ready(function() {
-    $('a.nav-link[href="#destacados"]').on('click', function(event) {
-      event.preventDefault();
-      var targetPosition = $('#destacados').offset().top;
+$(document).ready(function() {
+  $('a.nav-link[href="#destacados"]').on('click', function(event) {
+    event.preventDefault();
+    var targetPosition = $('#destacados').offset().top;
 
-      $('html, body').animate({
-        scrollTop: targetPosition
-      }, 800); 
-    });
+    $('html, body').animate({
+      scrollTop: targetPosition
+    }, 800); 
   });
+});
 
-    // Smooth Scroll Featured-section //
-    $(document).ready(function() {
-        $('a.nav-link[href="#contacto"]').on('click', function(event) {
-          event.preventDefault();
-          var targetPosition = $('#contacto').offset().top;
-    
-          $('html, body').animate({
-            scrollTop: targetPosition
-          }, 800); 
-        });
-      });
+// Smooth Scroll Featured-section //
+$(document).ready(function() {
+$('a.nav-link[href="#contacto"]').on('click', function(event) {
+    event.preventDefault();
+    var targetPosition = $('#contacto').offset().top;
+
+    $('html, body').animate({
+      scrollTop: targetPosition
+    }, 800); 
+  });
+});
 
