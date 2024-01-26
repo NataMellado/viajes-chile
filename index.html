@@ -18,7 +18,7 @@
 
 <body>
     <!-- Nav-->
-    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid m-0 p-0">
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img id="logo" class="me-2" src="./assets/img/viajes.svg" alt="logo">
@@ -48,7 +48,27 @@
 
     <!-- Header -->
     <header>
-
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Paisaje">
+              </div>
+              <div class="carousel-item align-items-center">
+                <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Paisaje">
+              </div>
+              <div class="carousel-item align-items-center">
+                <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Paisaje">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
 
     <!-- Main -->

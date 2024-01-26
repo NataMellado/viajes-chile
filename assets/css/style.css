@@ -14,13 +14,27 @@
 }
 
 /* Nav */
+nav {
+    z-index: 1;
+}
+
 nav #logo {
     height: 2rem;
 }
 
-
 /* Header */
+header #carouselAutoplaying {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
 
+header img {
+    max-height: 700px; 
+    width: auto;
+    object-fit: cover; 
+    object-position: top;
+}
 
 /* About section */
 
