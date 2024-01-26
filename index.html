@@ -18,7 +18,7 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="inicio">
     <!-- Nav - Componente de bootstrap -->
       <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
           <div class="container-fluid p-0 m-0">
@@ -32,16 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Quienes Somos</a>
+                  <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Destacados</a>
+                  <a class="nav-link" href="#destacados">Destacados</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link pe-0" href="#">Contacto</a>
+                  <a class="nav-link pe-0" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -75,7 +75,7 @@
     <!-- Main -->
     <main class="container-fluid text-white p-0 m-0">
         <!-- About section -->
-        <section class="about-section d-none d-sm-block pt-5">
+        <section id="quienes-somos"  class="about-section d-none d-sm-block pt-5">
           <h1 class="text-center py-5">¿QUIÉNES SOMOS?</h1>
           <div class="row justify-content-md-center">
             <!-- Card Header 1 - Componente de bootstrap -->
@@ -106,10 +106,10 @@
         </section>
 
         <!-- Featured Section -->
-        <section class="featured-section py-5 ">
+        <section id="destacados" class="featured-section py-5 ">
           <h1 class="text-center py-5">DESTACADOS</h1>
           <div class="row g-5 m-0 p-0 card-container justify-content-evenly">
-            <!-- Card 1 -->
+            <!-- Card 1 - Componente de bootstrap -->
             <div class="card col-md-6 col-lg-3 p-0 border-0">
               <img src="./assets/img/card1.jpg" class="card-img-top" alt="Lugar destacado">
               <div class="card-body">
@@ -117,7 +117,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
-            <!-- Card 2 -->
+            <!-- Card 2 - Componente de bootstrap -->
             <div class="card col-md-6 col-lg-3 p-0 border-0">
               <img src="./assets/img/card2.jpg" class="card-img-top" alt="Lugar destacado">
               <div class="card-body">
@@ -125,7 +125,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content and here is more text.</p>
               </div>
             </div>
-            <!-- Card 3 -->
+            <!-- Card 3 - Componente de bootstrap -->
             <div class="card col-md-6 col-lg-3 p-0 border-0">
               <img src="./assets/img/card3.jpg" class="card-img-top" alt="Lugar destacado">
               <div class="card-body">
@@ -133,7 +133,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content and here is more text to add.</p>
               </div>
             </div>
-            <!-- Card 4 -->
+            <!-- Card 4 - Componente de bootstrap -->
             <div class="card col-md-6 col-lg-3 p-0 border-0">
               <img src="./assets/img/card4.jpg" class="card-img-top" alt="Lugar destacado">
               <div class="card-body">
@@ -145,7 +145,7 @@
         </section>
 
         <!-- Form Section -->
-        <section class="form-section py-5">
+        <section id="contacto" class="form-section py-5">
           <h1 class="text-center py-5">CONTACTO</h1>
           <!-- Form - Componente de bootstrap -->
           <div class="name-container mb-2">
@@ -160,7 +160,8 @@
             <label for="message">Mensaje</label>
             <textarea id="message" class="form-control"></textarea>
           </div>
-          <button type="button" class="btn text-white">Enviar</button>
+          <!--Tooltip de Bootstrap -->
+          <button type="button" id="enviarMensaje" data-bs-toggle="tooltip" data-bs-placement="top" title="Haz click para enviar a tu correo" class="btn text-white">Enviar</button>
         </section>
 
     </main>
@@ -169,13 +170,21 @@
     <footer>
       <div class="row footer-container container-fluid m-0 p-0 text-white text-center py-3 justify-content-center align-items-center">
         <div class="col-12 col-sm-6">
-          <p class="m-0">VIAJES CHILE</p>
+          <!-- Popover de Bootstrap -->
+          <p class="m-0" data-bs-toggle="popover" 
+             data-bs-placement="top" 
+             data-bs-custom-class="custom-popover"
+             data-bs-title="Viaja con nosotros!"
+             data-bs-content="Prepárate para una experiencia única.">
+            VIAJES CHILE
+          </p>
         </div>
         <div class="social-media col-12 col-sm-6">
-          <a href="https://github.com/" target="_blank" class="me-2"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://www.linkedin.com/" target="_blank" class="me-2"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://es-la.facebook.com/" target="_blank" class="me-2"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://twitter.com/"><i target="_blank" class="fa-brands fa-square-x-twitter"></i></a>
+          <!-- Tooltip Button de Bootstrap -->
+          <a href="https://github.com/" target="_blank" class="me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Github"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://es-la.facebook.com/" target="_blank" class="me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://twitter.com/" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i target="_blank" class="fa-brands fa-square-x-twitter"></i></a>
         </div>
       </div>
     </footer>
