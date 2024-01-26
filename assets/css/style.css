@@ -23,14 +23,9 @@ nav #logo {
 
 /* Carousel */
 #carouselAutoplaying {
+    background-color: var(--eerie-black);
     width: 100%;
     z-index: 1;
-}
-
-img {
-    max-height: 700px;
-    width: auto;
-    object-fit: cover;
 }
 
 /* Main */
@@ -43,13 +38,79 @@ main {
     background-color: var(--moonstone);
 }
 
-/* Featured Section */
-.featured-section img {
-    width: 100%;
-    object-fit: cover;
- }
-
 /* Form Section */
+.form-section .btn{
+    background-color: var(--moonstone);
+}
 
 
 /* Footer */
+.footer-container {
+    background-color: var(--moonstone);
+    height: 6rem;
+}
+
+.social-media a i {
+    color: white; 
+    font-size: 1.7rem;
+  }
+
+.footer-container p {
+    font-size: 1.2rem;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 300px) {
+    .navbar,
+    .featured-section,
+    .form-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar,
+    .about-section,
+    .featured-section,
+    .form-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }  
+    
+    .featured-section .card {
+        width: 20rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar,
+    .about-section,
+    .featured-section,
+    .form-section {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }   
+
+
+
+@media only screen and (min-width: 1440px) {
+    .navbar,
+    .about-section,
+    .featured-section,
+    .form-section {
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }   
+
+    .navbar {
+        margin-top: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .featured-section .card {
+        width: 15rem;
+    }
+
+
