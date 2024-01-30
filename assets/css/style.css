@@ -7,9 +7,11 @@
 
 :root {
     --eerie-black: #1D1D1D;
+    --eerie-black2: #272727;
     --moonstone: #56A3BB;
     --white: #fff;
     --black: #000;
+
 }
 
 /* Nav */
@@ -20,6 +22,17 @@ nav {
 nav #logo {
     height: 2rem;
 }
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--eerie-black2);
+}
+
+
 
 /* Carousel */
 #carouselAutoplaying {

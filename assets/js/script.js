@@ -62,3 +62,18 @@ $('a.nav-link[href="#contacto"]').on('click', function(event) {
   });
 });
 
+// Cambiar el estilo de .navbar a  .navbar.scrolled cuando el scroll esté fuera del header//
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector('.navbar');
+  var header = document.getElementById('inicio');
+
+  window.addEventListener('scroll', function () {
+      var headerHeight = header.offsetHeight;
+
+      if (window.scrollY > headerHeight) {
+          navbar.classList.add('scrolled');
+      } else {
+          navbar.classList.remove('scrolled');
+      }
+  });
+});
