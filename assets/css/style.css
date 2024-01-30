@@ -76,8 +76,8 @@ main h1 {
     .navbar,
     .featured-section,
     .form-section {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     main h1 {
@@ -91,8 +91,8 @@ main h1 {
     .about-section,
     .featured-section,
     .form-section {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }  
     
     .featured-section .card {
@@ -105,8 +105,8 @@ main h1 {
     .about-section,
     .featured-section,
     .form-section {
-        margin-left: 7rem;
-        margin-right: 7rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
     }   
 
     main h1 {
@@ -121,13 +121,13 @@ main h1 {
     .about-section,
     .featured-section,
     .form-section {
-        margin-left: 12rem;
-        margin-right: 12rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
     }   
 
     .navbar {
-        margin-top: 0.5rem;
-        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
     }
 
     .featured-section .card {
