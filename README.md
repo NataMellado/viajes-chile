@@ -1,4 +1,4 @@
-# Viajes Chile Landing Page
+# Desafío Viajes Chile - Landing Page
 
 _Este es el repositorio para la landing page de la agencia Viajes Chile. A continuación, se detallan algunos aspectos clave del proyecto._
 
